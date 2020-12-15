@@ -1,8 +1,8 @@
 import speech_recognition as sr
 
 r = sr.Recognizer()
-sample = sr.AudioFile('voicealphatest.wav')
+sample = sr.AudioFile('02_voice_test.wav')
 with sample as source:
     audio = r.record(source)
-type(audio)
+print(type(audio))
 print(r.recognize_google(audio))

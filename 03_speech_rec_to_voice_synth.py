@@ -5,7 +5,7 @@ import speech_recognition as sr
 # Create a recognizer instance, 'r'
 r = sr.Recognizer()
 # Tell SR that this is an audio file.
-audio_sample = sr.AudioFile('voicetest1.wav')
+audio_sample = sr.AudioFile('03_voice_test.wav')
 # Feed that sample into the recognizer instance's 'record' method
 with audio_sample as source:
     record = r.record(source)  # record is speech_recognition.AudioData object.
